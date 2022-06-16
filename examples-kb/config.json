@@ -1,0 +1,6 @@
+{
+  "api_url": "https://kbtestwikibase.wikibase.cloud/w/api.php",
+  "login_credentials" : {"bot_username": "OlafJanssen@KBwikibaseBot","bot_password": "...."},
+   "is_bot": "False",
+   "summary": "Python wikibase-api - KBTestWikibase.wikibase.cloud"
+}
