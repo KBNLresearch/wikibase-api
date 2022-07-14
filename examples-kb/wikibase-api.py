@@ -26,7 +26,7 @@ r=  wb.entity.add("property", content={"datatype":"url"})
 # ... of datatype ExternalId
 r=  wb.entity.add("property", content={"datatype":"external-id"})
 # ... of datatype Item
-#r=  wb.entity.add("property", content={"datatype":"wikibase-item"})
+r=  wb.entity.add("property", content={"datatype":"wikibase-item"})
 # ... of datatype Monolingualtext
 r=  wb.entity.add("property", content={"datatype":"monolingualtext"})
 # ... of datatype Time
