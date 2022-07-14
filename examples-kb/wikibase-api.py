@@ -17,29 +17,29 @@ See also https://kbtestwikibase.wikibase.cloud/w/api.php?action=help&modules=wbe
 """
 # Add new empty entity, no content- It must be set to one of ["item", "property", "lexeme", "form", "sense"]
 # Add empty Qnumber/item
-#r=  wb.entity.add("item", content=None)
+r=  wb.entity.add("item", content=None)
 
 # Add empty Property of datatype string
-#r=  wb.entity.add("property", content={"datatype":"string"})
+r=  wb.entity.add("property", content={"datatype":"string"})
 # ... of datatype URL
-#r=  wb.entity.add("property", content={"datatype":"url"})
+r=  wb.entity.add("property", content={"datatype":"url"})
 # ... of datatype ExternalId
-#r=  wb.entity.add("property", content={"datatype":"external-id"})
+r=  wb.entity.add("property", content={"datatype":"external-id"})
 # ... of datatype Item
 #r=  wb.entity.add("property", content={"datatype":"wikibase-item"})
 # ... of datatype Monolingualtext
-#r=  wb.entity.add("property", content={"datatype":"monolingualtext"})
+r=  wb.entity.add("property", content={"datatype":"monolingualtext"})
 # ... of datatype Time
-#r=  wb.entity.add("property", content={"datatype":"time"})
+r=  wb.entity.add("property", content={"datatype":"time"})
 
 # Remove property P34 (limited to users in the group: [[Project:Administrators|beheerders]].")
 #r=  wb.entity.remove("Property:P34")
 
 # Search (exact word match) for entities (items or properties) based on their labels and aliases
-#r=wb.entity.search("Koninklijke","nl", entity_type="item", limit=10, offset=None)
+r=wb.entity.search("Koninklijke","nl", entity_type="item", limit=10, offset=None)
 
 # Retrieve data - attributes =  ["info", "sitelinks", "aliases", "labels", "descriptions", "claims", "datatype"]
-#r = wb.entity.get(["Q1"], attributes=["labels"], languages=["nl"])
+r = wb.entity.get(["Q1"], attributes=["labels"], languages=["nl"])
 
 ############## Claims (P-Q-pairs) ====================
 """
